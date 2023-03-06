@@ -1,4 +1,4 @@
-FROM typesense/typesense:0.25.0.rc12
+FROM typesense/typesense:0.24.0
 EXPOSE 8108
 WORKDIR /opt
 RUN mkdir /data
