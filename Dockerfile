@@ -1,4 +1,4 @@
-FROM typesense/typesense:0.25.2
+FROM typesense/typesense:0.24.0
 EXPOSE 8108
 RUN mkdir /data
 COPY typesense-server.ini /data
