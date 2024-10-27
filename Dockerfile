@@ -1,4 +1,4 @@
-FROM typesense/typesense:27.1
-RUN mkdir /data
+FROM typesense/typesense:0.25.2
 EXPOSE 8108
-CMD [ "typesense-server", "--data-dir=/data", "--api-key=trist", "--enable-cors" ]
+RUN mkdir /data
+CMD [ "typesense-server", "--data-dir=/data", "--api-key=trist", "--enable-cors", "--api-port=8108" ]
